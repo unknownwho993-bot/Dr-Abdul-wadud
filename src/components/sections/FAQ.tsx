@@ -56,9 +56,9 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-background relative">
+    <section id="faq" className="py-12 md:py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-8 md:mb-12">
           <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</div>
           <h2 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
             {t.title}
@@ -69,8 +69,8 @@ export function FAQ() {
         <div className="max-w-3xl mx-auto">
           <Accordion className="w-full space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="glass-card border-emerald-100 dark:border-emerald-900/30 rounded-2xl px-6 data-[state=open]:shadow-md transition-all mb-4">
-                <AccordionTrigger className="text-left font-bold text-emerald-950 dark:text-emerald-100 hover:no-underline py-5 text-lg">
+              <AccordionItem key={index} value={`item-${index}`} className="glass-card border-emerald-100 dark:border-emerald-900/30 rounded-2xl px-4 md:px-6 data-[state=open]:shadow-md transition-all mb-3 md:mb-4">
+                <AccordionTrigger className="text-left font-bold text-emerald-950 dark:text-emerald-100 hover:no-underline py-4 md:py-5 text-base md:text-lg">
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600 dark:text-slate-400 pb-5 leading-relaxed text-base">

@@ -42,9 +42,9 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background relative">
+    <section id="about" className="py-12 md:py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-10 md:mb-16">
           <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</div>
           <h2 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
             {lang === 'bn' ? 'ডাঃ মোঃ আব্দুল ওয়াদুদ' : 'Dr. Md. Abdul Wadud'}
@@ -74,7 +74,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {highlights.map((item, i) => (
             <motion.div
               key={i}
@@ -82,9 +82,9 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass-card p-6 rounded-2xl flex flex-col items-center text-center shadow-sm group"
+              className="glass-card p-4 md:p-6 rounded-2xl flex flex-col items-center text-center shadow-sm group"
             >
-              <div className="w-12 h-12 mx-auto rounded-full emerald-gradient text-white flex items-center justify-center mb-4 group-hover:-translate-y-1 transition-transform">
+              <div className="w-10 h-10 md:w-12 md:h-12 mx-auto rounded-full emerald-gradient text-white flex items-center justify-center mb-3 md:mb-4 group-hover:-translate-y-1 transition-transform">
                 <item.icon className="w-6 h-6" />
               </div>
               <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm mb-1">{item.title}</h3>

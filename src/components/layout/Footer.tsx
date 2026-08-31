@@ -36,7 +36,7 @@ export function Footer() {
   const t = text[lang];
 
   return (
-    <footer className="bg-emerald-950 text-slate-300 py-12 md:py-16 shrink-0">
+    <footer className="bg-emerald-950 text-slate-300 py-10 md:py-16 shrink-0">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           

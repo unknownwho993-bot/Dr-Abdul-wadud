@@ -44,13 +44,13 @@ export function Appointment() {
   const t = text[lang];
 
   return (
-    <section id="appointment" className="py-20 bg-background relative">
+    <section id="appointment" className="py-12 md:py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-12 bg-emerald-950 rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10 border-8 border-white dark:border-slate-800 relative">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 bg-emerald-950 rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10 border-8 border-white dark:border-slate-800 relative">
           
           <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[400px] h-[400px] rounded-full bg-emerald-800/50 blur-3xl" />
           
-          <div className="lg:w-1/2 p-8 md:p-12 text-white relative z-10 flex flex-col justify-center">
+          <div className="lg:w-1/2 p-6 md:p-12 text-white relative z-10 flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.title1}</h2>
             <p className="text-emerald-100 mb-10 text-lg leading-relaxed">
               {t.desc1}
@@ -89,7 +89,7 @@ export function Appointment() {
             </div>
           </div>
           
-          <div className="lg:w-1/2 p-8 md:p-12 bg-white dark:bg-slate-900 relative z-10 lg:rounded-l-[3rem]">
+          <div className="lg:w-1/2 p-6 md:p-12 bg-white dark:bg-slate-900 relative z-10 lg:rounded-l-[3rem]">
             <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
               <h3 className="text-2xl font-black text-emerald-950 dark:text-emerald-50 mb-6">{t.formTitle}</h3>
               

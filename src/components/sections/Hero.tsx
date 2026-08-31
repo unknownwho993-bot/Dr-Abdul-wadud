@@ -42,12 +42,12 @@ export function Hero() {
   const t = text[lang];
 
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-background">
+    <section id="home" className="relative pt-24 pb-12 md:pt-40 md:pb-28 overflow-hidden bg-background">
       {/* Background Decorative Elements */}
       <div className="medical-grid"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-8 items-center">
           
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export function Hero() {
               {t.badge}
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-emerald-950 dark:text-emerald-50">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight text-emerald-950 dark:text-emerald-50">
               {t.title1} <span className="text-primary block mt-2">{t.name}</span>
             </h1>
             
@@ -67,7 +67,7 @@ export function Hero() {
               {t.subtitle}
             </p>
             
-            <div className="bg-white dark:bg-slate-900 border-l-4 border-primary p-4 rounded-r-xl shadow-sm max-w-xl">
+            <div className="bg-white dark:bg-slate-900 border-l-4 border-primary p-3 md:p-4 rounded-r-xl shadow-sm max-w-xl">
               <p className="font-bold text-slate-800 dark:text-slate-100 whitespace-pre-line leading-relaxed">
                 {t.quals}
               </p>
