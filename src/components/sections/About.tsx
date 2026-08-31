@@ -45,10 +45,10 @@ export function About() {
     <section id="about" className="py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</h2>
-          <h3 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
+          <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</div>
+          <h2 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
             {lang === 'bn' ? 'ডাঃ মোঃ আব্দুল ওয়াদুদ' : 'Dr. Md. Abdul Wadud'}
-          </h3>
+          </h2>
           <div className="w-20 h-1 bg-emerald-600 rounded-full mb-6"></div>
           <p className="text-slate-600 dark:text-slate-300 max-w-3xl text-lg leading-relaxed">
             {lang === 'bn' ? (
@@ -58,6 +58,17 @@ export function About() {
             ) : (
               <>
                 Dr. Md. Abdul Wadud is a highly reputed <strong className="text-emerald-950 dark:text-emerald-100">Clinical & Interventional Cardiologist</strong> currently serving at the prestigious <strong className="text-emerald-950 dark:text-emerald-100">National Heart Institute & Hospital, Dhaka</strong>. He completed his specialized training in cardiovascular diseases from Bangladesh Medical University (Former PG Hospital), Dhaka. With his vast clinical experience, he brings world-class heart care to the people of Bangladesh.
+              </>
+            )}
+          </p>
+          <p className="text-slate-600 dark:text-slate-300 max-w-3xl text-lg leading-relaxed mt-4">
+            {lang === 'bn' ? (
+              <>
+                শেরপুর অঞ্চলের রোগীদের সুবিধার্থে তিনি প্রতি বৃহস্পতিবার <strong className="text-emerald-950 dark:text-emerald-100">রইছ মেডিকেল হল</strong> (হাসপাতাল রোড, শেরপুর)-এ নিয়মিত চেম্বার করেন। শেরপুরে একজন নির্ভরযোগ্য হৃদরোগ বিশেষজ্ঞ হিসেবে তিনি রোগীদের উন্নত মানের কার্ডিওলজি চিকিৎসা প্রদান করছেন।
+              </>
+            ) : (
+              <>
+                To ensure accessible heart care for local patients, Dr. Wadud regularly consults at <strong className="text-emerald-950 dark:text-emerald-100">Roich Medical Hall</strong> (Hospital Road, Sherpur) every Thursday. As a dedicated cardiologist in Sherpur, he is committed to delivering comprehensive cardiology services.
               </>
             )}
           </p>
@@ -76,7 +87,7 @@ export function About() {
               <div className="w-12 h-12 mx-auto rounded-full emerald-gradient text-white flex items-center justify-center mb-4 group-hover:-translate-y-1 transition-transform">
                 <item.icon className="w-6 h-6" />
               </div>
-              <h4 className="font-bold text-slate-900 dark:text-slate-100 text-sm mb-1">{item.title}</h4>
+              <h3 className="font-bold text-slate-900 dark:text-slate-100 text-sm mb-1">{item.title}</h3>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 font-bold uppercase tracking-wider">{item.desc}</p>
             </motion.div>
           ))}

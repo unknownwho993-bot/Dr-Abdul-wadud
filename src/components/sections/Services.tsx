@@ -81,10 +81,10 @@ export function Services() {
     <section id="services" className="py-20 bg-emerald-50/50 dark:bg-emerald-950/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</h2>
-          <h3 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
+          <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</div>
+          <h2 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
             {t.title}
-          </h3>
+          </h2>
           <div className="w-20 h-1 bg-emerald-600 rounded-full mb-6"></div>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
             {t.desc}
@@ -104,9 +104,9 @@ export function Services() {
               <span className="inline-block py-1.5 px-3 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-[10px] font-black uppercase tracking-widest mb-4">
                 {t.highlightLabel}
               </span>
-              <h4 className="text-2xl md:text-3xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
+              <h3 className="text-2xl md:text-3xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
                 {t.highlightTitle}
-              </h4>
+              </h3>
               <p className="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
                 {t.highlightDesc}
               </p>
@@ -116,7 +116,7 @@ export function Services() {
                 <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center mb-5 transition-transform group-hover:-translate-y-1">
                   <Heart className="w-6 h-6" />
                 </div>
-                <h5 className="font-bold text-xl text-slate-900 dark:text-slate-100 mb-3">{t.cardiologyTitle}</h5>
+                <h4 className="font-bold text-xl text-slate-900 dark:text-slate-100 mb-3">{t.cardiologyTitle}</h4>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                   {t.cardiologyDesc}
                 </p>
@@ -127,7 +127,7 @@ export function Services() {
                   <div className="w-12 h-12 rounded-xl emerald-gradient text-white flex items-center justify-center mb-5 shadow-md transition-transform group-hover:-translate-y-1">
                     <ActivitySquare className="w-6 h-6" />
                   </div>
-                  <h5 className="font-bold text-xl text-emerald-950 dark:text-emerald-50 mb-3">{t.interventionalTitle}</h5>
+                  <h4 className="font-bold text-xl text-emerald-950 dark:text-emerald-50 mb-3">{t.interventionalTitle}</h4>
                   <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
                     {t.interventionalDesc}
                   </p>
@@ -150,7 +150,7 @@ export function Services() {
               <div className="w-12 h-12 rounded-full emerald-gradient text-white flex items-center justify-center mb-5 shadow-md">
                 <service.icon className="w-6 h-6" />
               </div>
-              <h4 className="font-bold text-slate-900 dark:text-slate-100 text-lg mb-2">{service.title}</h4>
+              <h3 className="font-bold text-slate-900 dark:text-slate-100 text-lg mb-2">{service.title}</h3>
               <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{service.desc}</p>
             </motion.div>
           ))}

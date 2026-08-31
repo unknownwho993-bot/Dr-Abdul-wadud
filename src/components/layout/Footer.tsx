@@ -6,8 +6,8 @@ export function Footer() {
 
   const text = {
     en: {
-      name: 'Dr. Wadud',
-      spec: 'Cardiology Specialist',
+      name: 'Dr. Md. Abdul Wadud',
+      spec: 'Clinical & Interventional Cardiologist',
       desc: 'Dedicated to providing world-class cardiovascular care in Sherpur. Your heart health is our priority.',
       links: 'Quick Links',
       l1: 'Home', l2: 'About Doctor', l3: 'Treatments', l4: 'FAQ',
@@ -19,15 +19,15 @@ export function Footer() {
       privacy: 'Privacy Policy', terms: 'Terms of Service'
     },
     bn: {
-      name: 'ডাঃ ওয়াদুদ',
-      spec: 'হৃদরোগ বিশেষজ্ঞ',
+      name: 'ডাঃ মোঃ আব্দুল ওয়াদুদ',
+      spec: 'ক্লিনিক্যাল ও ইন্টারভেনশনাল কার্ডিওলজিস্ট',
       desc: 'শেরপুরে বিশ্বমানের কার্ডিওভাসকুলার যত্ন প্রদানের জন্য নিবেদিত। আপনার হৃদরোগের স্বাস্থ্য আমাদের অগ্রাধিকার।',
       links: 'গুরুত্বপূর্ণ লিংক',
       l1: 'হোম', l2: 'পরিচিতি', l3: 'সেবাসমূহ', l4: 'প্রশ্নাবলী',
       services: 'চিকিৎসাসমূহ',
       s1: 'হার্ট চেকআপ', s2: 'ইসিজি পর্যালোচনা', s3: 'উচ্চ রক্তচাপ', s4: 'হার্ট অ্যাটাক ঝুঁকি',
       contact: 'যোগাযোগের ঠিকানা',
-      address: 'রইচ মেডিকেল হল এবং নকিব ডায়াগনস্টিক সেন্টার, হাসপাতাল রোড, শেরপুর',
+      address: 'রইছ মেডিকেল হল এবং নাকিব ডায়াগনস্টিক সেন্টার, হাসপাতাল রোড, শেরপুর',
       rights: 'ডাঃ মোঃ আব্দুল ওয়াদুদ। সর্বস্বত্ব সংরক্ষিত।',
       privacy: 'গোপনীয়তা নীতি', terms: 'পরিষেবার শর্তাবলী'
     }
@@ -78,9 +78,9 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">{t.contact}</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-                <span className="text-sm">{t.address}</span>
+              <li className="flex items-start gap-3 group">
+                <MapPin className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 group-hover:text-emerald-400 transition-colors" />
+                <a href="https://maps.app.goo.gl/tnqBsxhRwDfvWeW29" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">{t.address}</a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-emerald-500 shrink-0" />

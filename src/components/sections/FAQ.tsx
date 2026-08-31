@@ -30,7 +30,7 @@ export function FAQ() {
       label: 'হেল্প সেন্টার',
       title: 'সাধারণ জিজ্ঞাসিত প্রশ্নাবলী',
       q1: 'ডাঃ মোঃ আব্দুল ওয়াদুদ শেরপুরে কোথায় রোগী দেখেন?',
-      a1: 'ডাঃ ওয়াদুদ শেরপুরের হাসপাতাল রোডে অবস্থিত রইচ মেডিকেল হল ও নকিব ডায়াগনস্টিক সেন্টারে বসেন।',
+      a1: 'ডাঃ ওয়াদুদ শেরপুরের হাসপাতাল রোডে অবস্থিত রইছ মেডিকেল হল ও নাকিব ডায়াগনস্টিক সেন্টারে বসেন।',
       q2: 'শেরপুরে ডাক্তার কোন দিন ও সময়ে বসেন?',
       a2: 'ডাক্তার প্রতি বৃহস্পতিবার বিকেল ৫:০০ টা থেকে রাত ৯:০০ টা পর্যন্ত বসেন।',
       q3: 'চেম্বারে কি ইসিজি ও ইকো করা যাবে?',
@@ -59,10 +59,10 @@ export function FAQ() {
     <section id="faq" className="py-20 bg-background relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</h2>
-          <h3 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
+          <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-2">{t.label}</div>
+          <h2 className="text-3xl md:text-4xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
             {t.title}
-          </h3>
+          </h2>
           <div className="w-20 h-1 bg-emerald-600 rounded-full"></div>
         </div>
 

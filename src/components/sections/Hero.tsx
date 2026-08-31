@@ -110,21 +110,21 @@ export function Hero() {
               {/* Fallback image if real doctor image is missing */}
               <img 
                 src="https://res.cloudinary.com/dcnqydnz6/image/upload/v1768733059/submissions/qm2hwhcrvqau3c2yvjut.png" 
-                alt="Dr. Md. Abdul Wadud" 
+                alt="Dr. Md. Abdul Wadud, Clinical & Interventional Cardiologist in Sherpur" 
                 className="w-full h-full object-cover object-top"
                 loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/60 to-transparent flex flex-col justify-end p-6">
-                 <div className="glass-card rounded-2xl p-4 flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-xl shrink-0">
+                 <a href="https://maps.app.goo.gl/tnqBsxhRwDfvWeW29" target="_blank" rel="noopener noreferrer" className="glass-card rounded-2xl p-4 flex items-start gap-4 hover:bg-white/90 dark:hover:bg-slate-900/90 transition-colors group">
+                    <div className="bg-primary/10 p-3 rounded-xl shrink-0 group-hover:bg-primary/20 transition-colors">
                       <MapPin className="w-6 h-6 text-emerald-700 dark:text-emerald-400" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-slate-900 dark:text-white">{t.chamber}</h3>
+                      <h3 className="font-bold text-slate-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors">{t.chamber}</h3>
                       <p className="text-sm text-slate-700 dark:text-slate-300 mt-1">{t.address}</p>
                       <p className="text-sm font-bold text-primary mt-1">{t.time}</p>
                     </div>
-                 </div>
+                 </a>
               </div>
             </div>
           </motion.div>

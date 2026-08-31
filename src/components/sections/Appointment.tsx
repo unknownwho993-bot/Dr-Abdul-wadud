@@ -57,15 +57,15 @@ export function Appointment() {
             </p>
             
             <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="bg-emerald-800/80 p-3 rounded-xl shrink-0">
-                  <MapPin className="w-6 h-6 text-emerald-300" />
+              <a href="https://maps.app.goo.gl/tnqBsxhRwDfvWeW29" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
+                <div className="bg-emerald-800/80 p-3 rounded-xl shrink-0 group-hover:bg-emerald-700 transition-colors">
+                  <MapPin className="w-6 h-6 text-emerald-300 group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg">{t.locTitle}</h4>
-                  <p className="text-emerald-100 whitespace-pre-line mt-1">{t.locDesc}</p>
+                  <h4 className="font-bold text-lg group-hover:text-emerald-300 transition-colors">{t.locTitle}</h4>
+                  <p className="text-emerald-100 whitespace-pre-line mt-1 group-hover:text-white transition-colors">{t.locDesc}</p>
                 </div>
-              </div>
+              </a>
               
               <div className="flex items-start gap-4">
                 <div className="bg-emerald-800/80 p-3 rounded-xl shrink-0">
