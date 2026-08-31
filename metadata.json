@@ -1,0 +1,8 @@
+{
+  "name": "Dr. Md. Abdul Wadud - Cardiologist",
+  "description": "Premium medical website for Dr. Md. Abdul Wadud, Heart Disease & Medicine Specialist in Sherpur, Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
