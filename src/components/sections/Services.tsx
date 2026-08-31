@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Activity, Heart, Stethoscope, Thermometer, Droplets, Zap, ShieldAlert, Waves } from 'lucide-react';
+import { Activity, Heart, Stethoscope, Thermometer, Droplets, Zap, ShieldAlert, Waves, ActivitySquare } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 export function Services() {
@@ -25,7 +25,14 @@ export function Services() {
       s7_title: 'Diabetes & Heart Risk',
       s7_desc: 'Specialized care for diabetic patients with high cardiac risk.',
       s8_title: 'Echocardiography (Echo)',
-      s8_desc: 'Advanced ultrasound imaging to evaluate heart structure and function.'
+      s8_desc: 'Advanced ultrasound imaging to evaluate heart structure and function.',
+      highlightLabel: 'Specialized Heart Care',
+      highlightTitle: 'Clinical & Interventional Cardiology',
+      highlightDesc: 'Specialized care in modern catheter-based diagnosis and treatment, alongside comprehensive general cardiology.',
+      cardiologyTitle: 'Cardiology',
+      cardiologyDesc: 'Diagnosis, evaluation, medical treatment, and long-term management of cardiovascular conditions.',
+      interventionalTitle: 'Interventional Cardiology',
+      interventionalDesc: 'Specialized catheter-based procedures including Coronary Angiography, Angioplasty (PCI), and Stent Placement.'
     },
     bn: {
       label: 'চিকিৎসা ও সেবাসমূহ',
@@ -46,7 +53,14 @@ export function Services() {
       s7_title: 'ডায়াবেটিস ও হৃদরোগের ঝুঁকি',
       s7_desc: 'হৃদরোগের উচ্চ ঝুঁকিসম্পন্ন ডায়াবেটিক রোগীদের বিশেষ যত্ন।',
       s8_title: 'ইকোকার্ডিওগ্রাফি (Echo)',
-      s8_desc: 'হৃদপিণ্ডের গঠন এবং কার্যকারিতা মূল্যায়নের জন্য উন্নত আল্ট্রাসাউন্ড ইমেজিং।'
+      s8_desc: 'হৃদপিণ্ডের গঠন এবং কার্যকারিতা মূল্যায়নের জন্য উন্নত আল্ট্রাসাউন্ড ইমেজিং।',
+      highlightLabel: 'বিশেষায়িত হৃদরোগ চিকিৎসা',
+      highlightTitle: 'Clinical & Interventional Cardiology',
+      highlightDesc: 'সাধারণ হৃদরোগের রোগ নির্ণয় ও চিকিৎসার পাশাপাশি ক্যাথেটার-ভিত্তিক আধুনিক হৃদরোগ নির্ণয় ও চিকিৎসায় বিশেষায়িত সেবা।',
+      cardiologyTitle: 'Cardiology',
+      cardiologyDesc: 'হৃদরোগের রোগ নির্ণয়, মূল্যায়ন, ওষুধভিত্তিক চিকিৎসা ও দীর্ঘমেয়াদি ব্যবস্থাপনা।',
+      interventionalTitle: 'Interventional Cardiology',
+      interventionalDesc: 'ক্যাথেটার-ভিত্তিক হৃদরোগের বিশেষায়িত চিকিৎসা, যেমন Coronary Angiography, Angioplasty (PCI) ও Stent Placement।'
     }
   };
 
@@ -76,6 +90,52 @@ export function Services() {
             {t.desc}
           </p>
         </div>
+
+        {/* Specialty Highlight Area */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-20 max-w-5xl mx-auto"
+        >
+          <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-emerald-900/10 border border-emerald-100 dark:border-emerald-900/50 overflow-hidden">
+            <div className="p-8 md:p-10 text-center border-b border-slate-100 dark:border-slate-800">
+              <span className="inline-block py-1.5 px-3 rounded-full bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-[10px] font-black uppercase tracking-widest mb-4">
+                {t.highlightLabel}
+              </span>
+              <h4 className="text-2xl md:text-3xl font-black text-emerald-950 dark:text-emerald-50 mb-4">
+                {t.highlightTitle}
+              </h4>
+              <p className="text-slate-600 dark:text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                {t.highlightDesc}
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-slate-100 dark:divide-slate-800">
+              <div className="p-8 md:p-10 transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 group">
+                <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex items-center justify-center mb-5 transition-transform group-hover:-translate-y-1">
+                  <Heart className="w-6 h-6" />
+                </div>
+                <h5 className="font-bold text-xl text-slate-900 dark:text-slate-100 mb-3">{t.cardiologyTitle}</h5>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                  {t.cardiologyDesc}
+                </p>
+              </div>
+              <div className="p-8 md:p-10 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-900/20 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 dark:bg-emerald-900/20 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-xl emerald-gradient text-white flex items-center justify-center mb-5 shadow-md transition-transform group-hover:-translate-y-1">
+                    <ActivitySquare className="w-6 h-6" />
+                  </div>
+                  <h5 className="font-bold text-xl text-emerald-950 dark:text-emerald-50 mb-3">{t.interventionalTitle}</h5>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
+                    {t.interventionalDesc}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {servicesList.map((service, i) => (

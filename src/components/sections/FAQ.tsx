@@ -22,7 +22,9 @@ export function FAQ() {
       q4: 'How can I book an appointment?',
       a4: 'You can book an appointment by calling 01712613826. You can also send a message via WhatsApp to the same number, or fill out the form on this website.',
       q5: 'Does the doctor treat pediatric heart conditions?',
-      a5: 'Dr. Wadud is a clinical and interventional cardiologist primarily for adults. For congenital heart defects in small children, a pediatric cardiologist should be consulted.'
+      a5: 'Dr. Wadud is a clinical and interventional cardiologist primarily for adults. For congenital heart defects in small children, a pediatric cardiologist should be consulted.',
+      q6: 'What symptoms indicate that I should consult an interventional cardiologist?',
+      a6: 'You should consult a cardiologist immediately if you experience chest tightness or severe pain, pain spreading to the arm, neck, or jaw, shortness of breath with mild exertion, sudden palpitations, excessive sweating, or dizziness.'
     },
     bn: {
       label: 'হেল্প সেন্টার',
@@ -31,12 +33,14 @@ export function FAQ() {
       a1: 'ডাঃ ওয়াদুদ শেরপুরের হাসপাতাল রোডে অবস্থিত রইচ মেডিকেল হল ও নকিব ডায়াগনস্টিক সেন্টারে বসেন।',
       q2: 'শেরপুরে ডাক্তার কোন দিন ও সময়ে বসেন?',
       a2: 'ডাক্তার প্রতি বৃহস্পতিবার বিকেল ৫:০০ টা থেকে রাত ৯:০০ টা পর্যন্ত বসেন।',
-      q3: 'চেম্বারে কি ইসিজি করা যাবে?',
+      q3: 'চেম্বারে কি ইসিজি ও ইকো করা যাবে?',
       a3: 'হ্যাঁ, ডায়াগনস্টিক সেন্টারে ইসিজি এবং বেসিক কার্ডিয়াক ডায়াগনস্টিক সুবিধা রয়েছে। ডাক্তার সাথে সাথেই রিপোর্টগুলো দেখবেন।',
       q4: 'আমি কিভাবে অ্যাপয়েন্টমেন্ট বুক করতে পারি?',
       a4: 'আপনি 01712613826 নম্বরে কল করে অ্যাপয়েন্টমেন্ট বুক করতে পারেন। আপনি একই নম্বরে হোয়াটসঅ্যাপের মাধ্যমেও মেসেজ পাঠাতে পারেন, অথবা এই ওয়েবসাইটের ফর্মটি পূরণ করে রাখতে পারেন।',
       q5: 'ডাক্তার কি শিশুদের হৃদরোগের চিকিৎসা করেন?',
-      a5: 'ডাঃ ওয়াদুদ একজন প্রাপ্তবয়স্ক ক্লিনিক্যাল ও ইন্টারভেনশনাল কার্ডিওলজিস্ট। ছোট শিশুদের জন্মগত হৃদরোগের জন্য পেডিয়াট্রিক কার্ডিওলজিস্টের পরামর্শ নেওয়া উচিত।'
+      a5: 'ডাঃ ওয়াদুদ একজন ক্লিনিক্যাল ও ইন্টারভেনশনাল কার্ডিওলজিস্ট। ছোট শিশুদের হৃদরোগের জন্য পরামর্শ প্রদান করে থাকেন।',
+      q6: 'কী কী লক্ষণ দেখলে ইন্টারভেনশনাল কার্ডিওলোজিস্টের পরামর্শ নেওয়া উচিত?',
+      a6: 'বুকে চাপ বা তীব্র ব্যথা, বাহু, ঘাড় বা চোয়ালে ব্যথা ছড়িয়ে পড়া, সামান্য হাঁটাহাঁটিতে শ্বাসকষ্ট, হঠাৎ বুক ধড়ফড় করা, অতিরিক্ত ঘাম এবং মাথা ঘোরার মতো সমস্যা দেখা দিলে দ্রুত হৃদরোগ বিশেষজ্ঞের কাছে যেতে হবে।'
     }
   };
 
@@ -48,6 +52,7 @@ export function FAQ() {
     { q: t.q3, a: t.a3 },
     { q: t.q4, a: t.a4 },
     { q: t.q5, a: t.a5 },
+    { q: t.q6, a: t.a6 },
   ];
 
   return (
@@ -62,7 +67,7 @@ export function FAQ() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+          <Accordion className="w-full space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="glass-card border-emerald-100 dark:border-emerald-900/30 rounded-2xl px-6 data-[state=open]:shadow-md transition-all mb-4">
                 <AccordionTrigger className="text-left font-bold text-emerald-950 dark:text-emerald-100 hover:no-underline py-5 text-lg">

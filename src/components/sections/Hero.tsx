@@ -23,19 +23,19 @@ export function Hero() {
       dhakaSpec: 'Dhaka Specialist'
     },
     bn: {
-      badge: 'এখন শেরপুরে নিয়মিত বসছেন',
-      title1: 'বিশেষজ্ঞ হৃদরোগ চিকিৎসা -',
+      badge: 'এখন শেরপুরে নিয়মিত রোগী দেখছেন',
+      title1: 'বিশেষজ্ঞ হৃদরোগ চিকিৎসক', 
       name: 'ডাঃ মোঃ আব্দুল ওয়াদুদ',
       subtitle: 'জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতাল, ঢাকা এর নিয়মিত হৃদরোগ বিশেষজ্ঞ।',
       quals: 'এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য), এমডি (কার্ডিওলজি)\nক্লিনিক্যাল ও ইন্টারভেনশনাল কার্ডিওলজিস্ট',
       book: 'অ্যাপয়েন্টমেন্ট নিন',
       call: 'কল করুন',
       trusted: '১০০০+ রোগীর আস্থার প্রতীক',
-      chamber: 'রইচ মেডিকেল হল',
+      chamber: 'রইছ মেডিকেল হল',
       address: 'হাসপাতাল রোড, শেরপুর',
       time: 'প্রতি বৃহস্পতিবার (বিকাল ৫টা - রাত ৯টা)',
-      nhi: 'জাতীয় হৃদরোগ ইনস্টিটিউট',
-      dhakaSpec: 'ঢাকা বিশেষজ্ঞ'
+      nhi: 'জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতাল',
+      dhakaSpec: 'হৃদরোগ বিশেষজ্ঞ'
     }
   };
 
@@ -127,17 +127,6 @@ export function Hero() {
                  </div>
               </div>
             </div>
-            
-            {/* Floating Badges */}
-            <motion.div 
-              animate={{ y: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 4 }}
-              className="absolute -right-4 md:-right-8 top-12 glass-card p-4 rounded-2xl shadow-xl max-w-[200px]"
-            >
-              <div className="text-3xl mb-1">❤️</div>
-              <p className="font-bold text-sm text-slate-900 dark:text-white">{t.nhi}</p>
-              <p className="text-xs text-slate-500 dark:text-slate-400">{t.dhakaSpec}</p>
-            </motion.div>
           </motion.div>
           
         </div>

@@ -53,11 +53,11 @@ export function About() {
           <p className="text-slate-600 dark:text-slate-300 max-w-3xl text-lg leading-relaxed">
             {lang === 'bn' ? (
               <>
-                ডাঃ মোঃ আব্দুল ওয়াদুদ একজন স্বনামধন্য <strong className="text-emerald-950 dark:text-emerald-100">ক্লিনিক্যাল এবং ইন্টারভেনশনাল কার্ডিওলজিস্ট</strong>, যিনি বর্তমানে ঢাকার স্বনামধন্য <strong className="text-emerald-950 dark:text-emerald-100">জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতালে</strong> কর্মরত আছেন। তিনি বাংলাদেশ মেডিকেল ইউনিভার্সিটি (সাবেক পিজি হাসপাতাল), ঢাকা থেকে হৃদরোগে তার বিশেষ প্রশিক্ষণ সম্পন্ন করেছেন। তার বিশাল ক্লিনিক্যাল অভিজ্ঞতা নিয়ে তিনি শেরপুরের মানুষের জন্য বিশ্বমানের হৃদরোগ চিকিৎসা নিয়ে এসেছেন।
+                ডাঃ মোঃ আব্দুল ওয়াদুদ একজন স্বনামধন্য <strong className="text-emerald-950 dark:text-emerald-100">ক্লিনিক্যাল এবং ইন্টারভেনশনাল কার্ডিওলজিস্ট</strong>, যিনি বর্তমানে ঢাকার স্বনামধন্য <strong className="text-emerald-950 dark:text-emerald-100">জাতীয় হৃদরোগ ইনস্টিটিউট ও হাসপাতালে</strong> কর্মরত আছেন। তিনি বাংলাদেশ মেডিকেল ইউনিভার্সিটি (সাবেক পিজি হাসপাতাল), ঢাকা থেকে হৃদরোগে তার বিশেষ প্রশিক্ষণ সম্পন্ন করেছেন। তার বিশাল ক্লিনিক্যাল এবং ইন্টারভেনশনাল অভিজ্ঞতা নিয়ে দেশের মানুষের জন্য বিশ্বমানের হৃদরোগ চিকিৎসা নিয়ে আসছেন।
               </>
             ) : (
               <>
-                Dr. Md. Abdul Wadud is a highly reputed <strong className="text-emerald-950 dark:text-emerald-100">Clinical & Interventional Cardiologist</strong> currently serving at the prestigious <strong className="text-emerald-950 dark:text-emerald-100">National Heart Institute & Hospital, Dhaka</strong>. He completed his specialized training in cardiovascular diseases from Bangladesh Medical University (Former PG Hospital), Dhaka. With his vast clinical experience, he brings world-class heart care to the people of Sherpur.
+                Dr. Md. Abdul Wadud is a highly reputed <strong className="text-emerald-950 dark:text-emerald-100">Clinical & Interventional Cardiologist</strong> currently serving at the prestigious <strong className="text-emerald-950 dark:text-emerald-100">National Heart Institute & Hospital, Dhaka</strong>. He completed his specialized training in cardiovascular diseases from Bangladesh Medical University (Former PG Hospital), Dhaka. With his vast clinical experience, he brings world-class heart care to the people of Bangladesh.
               </>
             )}
           </p>
